@@ -1,13 +1,16 @@
 import React from "react";
+import Pic2 from "../assets/About.jpeg";
 
 function About() {
   return (
-    <>
-      <div className="base">
-        <div>
-          <h1>About Us</h1>
-        <p>
-          Saarthii HR Consultancy, headquartered in Indore, is a dynamic and
+
+
+    <div className="home-container">
+          <div className="home-lhs">
+            <div className="home-lhs-content">
+              <h1>About</h1>
+              <p>
+            Saarthii HR Consultancy, headquartered in Indore, is a dynamic and
           result-driven human resource consulting firm dedicated to empowering
           organizations with strategic HR solutions. With a strong commitment to
           excellence and client satisfaction, Saarthii specializes in providing
@@ -19,15 +22,15 @@ function About() {
           and delivering customized HR strategies that align with their
           organizational goals. At Saarthii HR Consultancy, we believe in being
           the guiding force—a true “saarthii”—in our clients’ journey toward
-          building high-performing teams and sustainable growth.
-        </p>
+          building high-performing teams and sustainable growth
+              </p>
+            </div>
+          </div>
+          <div className="home-rhs">
+        <img src={Pic2} alt="Saarthii visual" />
+          </div>
         </div>
-        <div>
-          <img src="" alt="" />
-        </div>
-        
-      </div>
-    </>
+   
   );
 }
 

@@ -1,45 +1,95 @@
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: grey;
-    padding: 0 10px;
-
+/* Nav Bar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  padding: 5px 15px;
+  border-bottom: 2px solid #ff0057; /* Subtle border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.logo{
-    display: flex ;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: white;
-}
-.logo img{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.logo h1{
-    font-size: 24px;
-    text-transform: uppercase;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-}   
-
-nav ul li{
-    margin: 0 10px;
-    padding: 5px;
-} 
-
-nav ul li:hover{
-    background: lightgrey;
-    border-radius: 5px;
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}   
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slight animation */
+}
+
+/* Navigation Links */
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-links ul li {
+  margin: 0 15px;
+  padding: 5px 10px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.nav-links ul li a:hover {
+  color: #ff0057;
+  text-decoration: underline;
+}
+
+/* Hover effect for entire li */
+.nav-links ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links ul li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .nav-links ul li a {
+    font-size: 1.2rem;
+  }
+}
