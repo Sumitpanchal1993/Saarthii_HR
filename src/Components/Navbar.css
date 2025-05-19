@@ -1,29 +1,18 @@
-/* Nav Bar Container */
+/* Base Styles */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #333;
-  padding: 5px 15px;
-  border-bottom: 2px solid #ff0057; /* Subtle border */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  background: #2c3e50;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 999;
 }
 
-/* Logo Styling */
 .logo {
   display: flex;
   align-items: center;
   color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: transform 0.3s ease;
 }
 
 .logo img {
@@ -32,64 +21,71 @@
   margin-right: 10px;
 }
 
-.logo:hover {
-  transform: scale(1.05); /* Slight animation */
+.logo h1 {
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
-/* Navigation Links */
+/* Nav Links */
 .nav-links ul {
   display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .nav-links ul li {
-  margin: 0 15px;
-  padding: 5px 10px;
+  margin: 0 10px;
 }
 
 .nav-links ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
   font-weight: 500;
-  text-transform: capitalize;
-  transition: color 0.3s ease;
+  padding: 5px 8px;
+  transition: background 0.3s;
 }
 
-/* Hover Effects */
 .nav-links ul li a:hover {
-  color: #ff0057;
-  text-decoration: underline;
+  background: #34495e;
+  border-radius: 4px;
 }
 
-/* Hover effect for entire li */
-.nav-links ul li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
 }
 
-/* Responsive Design */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #2c3e50;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .nav-links.open {
+    height: 220px; /* Adjust based on number of links */
   }
 
   .nav-links ul {
     flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
+    align-items: center;
   }
 
   .nav-links ul li {
-    width: 100%;
-    text-align: center;
-    margin: 5px 0;
-  }
-
-  .nav-links ul li a {
-    font-size: 1.2rem;
+    margin: 12px 0;
   }
 }

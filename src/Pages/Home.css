@@ -117,3 +117,73 @@ p {
     transform: translateY(0);
   }
 }
+
+
+/* ========= Responsive Styles ========= */
+@media screen and (max-width: 1024px) {
+  .home-lhs,
+  .home-rhs {
+    clip-path: none;
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .home-lhs-content {
+    padding: 2rem;
+  }
+
+  .home-rhs img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .scrollable-text {
+    max-height: 300px;
+  }
+
+  .home-lhs-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .scrollable-text h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .scrollable-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-lhs-content h1 {
+    font-size: 2rem;
+  }
+
+  .scrollable-text h2 {
+    font-size: 1rem;
+  }
+
+  .scrollable-text p {
+    font-size: 0.95rem;
+  }
+
+  .scrollable-text {
+    max-height: 250px;
+  }
+
+  .home-rhs img {
+    max-height: 200px;
+  }
+}

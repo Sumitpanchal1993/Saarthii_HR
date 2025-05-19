@@ -26,6 +26,17 @@ function Home() {
               strategic advantage—driving businesses forward and shaping
               meaningful careers across India and beyond.
             </p>
+            <h2>Our Philosophy</h2>
+            <p>
+              At Saarthii HR Consultancy, we believe that people are the
+              cornerstone of every successful organization. Our philosophy
+              centers on cultivating meaningful partnerships that align talent
+              with purpose, particularly in the dynamic fields of Environment
+              and Information Technology. As a trusted “saarthii”—a guide and
+              enabler—we navigate the evolving landscapes of green innovation
+              and digital transformation, ensuring that the right people are in
+              the right roles to make a meaningful impact.
+            </p>
           </div>
         </div>
       </div>
