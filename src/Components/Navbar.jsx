@@ -22,7 +22,7 @@ function Navbar() {
         <ul>
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-          <li><Link to="/organisation" onClick={toggleMenu}>Services</Link></li>
+          {/* <li><Link to="/organisation" onClick={toggleMenu}>Services</Link></li> */}
           <li><Link to="/marketing" onClick={toggleMenu}>Marketing</Link></li>
           <li><Link to="/contact_us" onClick={toggleMenu}>Contact</Link></li>
         </ul>

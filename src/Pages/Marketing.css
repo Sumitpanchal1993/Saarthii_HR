@@ -1,0 +1,43 @@
+.marketing-header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.marketing-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.marketing-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .marketing-header h1 {
+    font-size: 2rem;
+  }
+
+  .marketing-header p {
+    font-size: 1rem;
+  }
+}
